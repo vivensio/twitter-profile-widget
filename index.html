@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Profile Widget Example</title>
+    <script type="text/javascript" src="twitter-profile-widget.js"></script>
+    <script src="./site/fork-me-baby.min.js"></script>
+    <link rel="stylesheet" href="./site/style.css" />
+</head>
+<body>
+    <header>
+        <span>
+            <h1>&lt; twitter-profile-widget /&gt;</h1>
+            <h3>Embedable twitter profiles</h3>
+        </span>
+    </header>
+    <div class="demo-container">
+        <div class="demo-inputs">
+            <p>Enter your twitter username :</p>
+            <input type="text" class="demo--username-input"/>
+            <input type="button" class="demo--generate-widget-btn" value="Get Twitter Profile"/>
+        </div>
+        <div class="demo--tpw-widget"></div>
+    </div>
+    <div class="main-container">
+        <div class="main-container--heading">
+            <h3>More Demo Widgets</h3>
+            <p>(in case you are too lazy to enter a username)</p>
+        </div>
+        <div class="main-container--showcase">
+            <div class="twitter-profile-widget" data-twitter-username="GameOfThrones"></div>
+            <div class="twitter-profile-widget" data-twitter-username="twitter"></div>
+            <div class="twitter-profile-widget" data-twitter-username="minecraft"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Made by <a class="vivensio-footer-link" href="http://github.com/vivensio" target="_blank"> vivensio</a></p>
+    </footer>
+    <script type="text/javascript" src="./site/script.js"></script>
+</body>
+</html>

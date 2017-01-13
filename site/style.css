@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+input, select, textarea, button { 
+    font-family:inherit;
+}
+header {
+    padding: 2% 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+header * {
+    font-weight: normal;
+}
+header > span {
+    padding: 1%;
+    display: inline-block;
+    position: relative;
+}
+.demo-container {
+    padding: 2% 0;
+}
+.demo-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 0;
+}
+.demo-inputs > * {
+    width: 300px;
+    margin: 0 auto;
+    color: #333;
+}
+.demo--tpw-widget.twitter-profile-widget {
+    display: flex;
+    margin: 0 auto;
+}
+.demo--username-input {
+    padding: 10px;
+    border: none;
+    border: 1px solid cornflowerblue;
+    color: #333;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: monospace;
+}
+.demo--generate-widget-btn {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #026AA7;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.demo--generate-widget-btn:hover {
+    background-color: #2a6bdf;
+    color: white;
+}
+.main-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(0, 121, 191);
+}
+.main-container--heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.main-container--showcase {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main-container--showcase > div {
+    display: inline-block;
+    margin: 1%;
+    float: left;
+    width: 25%;
+}
+footer {
+    background-color: #026AA7;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+}
+.vivensio-footer-link {
+    text-decoration: none;
+    color: hotpink;
+}
+@media screen and (max-width: 768px) {
+    .main-container--heading {
+        margin-bottom: 5%;
+    }
+    .main-container--showcase {
+        flex-flow: column wrap;
+    }
+    .main-container--showcase > div {
+        display: block;
+        width: auto;
+        margin: 1% auto;
+    }
+    footer {
+        padding: 5% 0;
+    }
+}
