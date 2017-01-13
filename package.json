@@ -1,0 +1,22 @@
+{
+  "name": "twitter-profile-widget",
+  "version": "0.0.1",
+  "description": "Embed twitter profile everywhere",
+  "author": "vivensio",
+  "license": "MIT",
+  "keywords": [
+    "Twitter",
+    "Profile",
+    "Widget",
+    "Embed"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

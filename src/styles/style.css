@@ -1,0 +1,154 @@
+/* tpwc = twitter-profile-widget-container */
+.twitter-profile-widget, .twitter-profile-widget * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.twitter-profile-widget {
+  font-size: 16px;
+  max-width: 300px;
+  position: relative;
+  color: #292f33; }
+
+.tpw-error {
+  background: cornflowerblue;
+  display: none;
+  color: #fff;
+  min-height: 12em;
+  padding: 50px 20px;
+  width: 300px;
+  text-align: center; }
+
+.tpw-loader {
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  min-height: 12em; }
+  .tpw-loader.tpw-loaded {
+    z-index: -1;
+    opacity: 0;
+    display: none; }
+    .tpw-loader.tpw-loaded ~ .tpw-container {
+      opacity: 1; }
+  .tpw-loader .tpw-loader--inner {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: tpwLoading .6s linear infinite alternate-reverse; }
+
+@keyframes tpwLoading {
+  0% {
+    background-color: white;
+    transform: scale(0.1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    background-color: cornflowerblue;
+    transform: scale(2); } }
+
+.tpw-container {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,sans-serif;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 300ms linear;
+  transition-delay: .4s;
+  background-color: #fff; }
+  .tpw-container * {
+    background-color: #fff; }
+  .tpw-container .tpw-banner {
+    background-size: cover;
+    background-color: #63aeee;
+    height: 6em; }
+  .tpw-container .tpw-content {
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-top: 0; }
+  .tpw-container .tpw-body {
+    padding-top: 0.4em;
+    font-size: 0.5em; }
+    .tpw-container .tpw-body > .tpw-link {
+      padding-right: 0.2em;
+      margin: 0 0.2em 0.4em 0;
+      float: left;
+      width: 25%; }
+      .tpw-container .tpw-body > .tpw-link .tpw-avatar-wrap {
+        margin-top: 6em;
+        display: block;
+        position: relative; }
+        .tpw-container .tpw-body > .tpw-link .tpw-avatar-wrap .tpw-avatar {
+          border: 2px solid #fff;
+          border-radius: .4em;
+          position: absolute;
+          bottom: 0;
+          /* left: 0; */
+          margin: 0 0 -2px 5px;
+          width: 75px; }
+  .tpw-container .tpw-names {
+    overflow: hidden;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 2em;
+    display: inline-block; }
+    .tpw-container .tpw-names .tpw-name-wrap {
+      font-size: 2em;
+      color: initial; }
+      .tpw-container .tpw-names .tpw-name-wrap .tpw-verified-wrap {
+        height: 1.25em;
+        display: inline-block;
+        vertical-align: text-bottom; }
+        .tpw-container .tpw-names .tpw-name-wrap .tpw-verified-wrap .tpw-verified-svg {
+          height: 100%;
+          fill: #77c7f7; }
+    .tpw-container .tpw-names .tpw-username {
+      color: #aab8c2;
+      direction: ltr;
+      margin-top: .1rem;
+      font-size: 1.7em; }
+  .tpw-container .tpw-details {
+    padding: 0 0.6em;
+    margin-top: 2.5em; }
+    .tpw-container .tpw-details .tpw-description {
+      margin-bottom: 0.5em;
+      word-wrap: break-word;
+      font-size: 1.5em; }
+      .tpw-container .tpw-details .tpw-description .tpw-description-link {
+        color: #1b95e0;
+        text-decoration: none; }
+    .tpw-container .tpw-details .tpw-location {
+      max-width: 100%;
+      display: inline-block;
+      font-size: 1.4em;
+      font-weight: bold; }
+    .tpw-container .tpw-details .tpw-middot {
+      display: inline-block;
+      max-width: 100%;
+      text-align: center;
+      width: 1.2em; }
+    .tpw-container .tpw-details .tpw-url {
+      color: #3b94d9;
+      text-decoration: none;
+      display: inline-block;
+      max-width: 100%;
+      font-size: 1.5em; }
+  .tpw-container .tpw-stats {
+    width: 100%;
+    margin-top: 1em;
+    padding-bottom: 1em; }
+    .tpw-container .tpw-stats .tpw-stat-wrap {
+      width: 32.5%;
+      padding: 1em 2em 0 1em;
+      display: inline-block; }
+      .tpw-container .tpw-stats .tpw-stat-wrap span {
+        display: block; }
+      .tpw-container .tpw-stats .tpw-stat-wrap .tpw-stat-title {
+        font-size: 1.4em;
+        text-transform: uppercase;
+        color: #657787; }
+      .tpw-container .tpw-stats .tpw-stat-wrap .tpw-stat-number {
+        font-size: 2em;
+        color: #14171a;
+        margin-top: 0.1em; }
