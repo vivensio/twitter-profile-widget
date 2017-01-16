@@ -17,7 +17,7 @@
 
     forkMeBaby({
         position : 'top-right',
-        link: 'https://www.github.com/abc/xyz',
+        link: 'https://github.com/vivensio/twitter-profile-widget',
         sticky: true
     });
 })();
