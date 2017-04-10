@@ -35,7 +35,7 @@ gulp.task('build', ['minifyhtml', 'minifycss'], function () {
         }))
         .pipe(rename('twitter-profile-widget.js'))
         .pipe(gulp.dest('dist'))
-        //.pipe(uglify())
+        .pipe(uglify({preserveComments: 'license'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist'));
 });

@@ -1,8 +1,8 @@
 {
   "name": "twitter-profile-widget",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Embed twitter profile everywhere",
-  "author": "vivensio",
+  "author": "Vivek Patel, @vivensio",
   "license": "MIT",
   "keywords": [
     "Twitter",
